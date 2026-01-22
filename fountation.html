@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndiema Fitness Foundation | Eldoret, Kenya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254759500240?text=Hello%20Ndiema%20Fitness%20Foundation,%20I%20would%20like%20to%20learn%20more%20about%20supporting%20your%20mission." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 font-bold whitespace-nowrap">
+            Chat with Coach
+        </span>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-blue-600 p-2 rounded-lg text-white">
+                    <i class="fas fa-heart text-xl"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight logo-text text-white">
+                    NDIEMA <span class="text-blue-500 font-black">FITNESS</span>
+                </span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#" class="nav-link font-medium text-white hover:text-blue-400 transition-colors">Home</a>
+                <a href="#mission" class="nav-link font-medium text-white hover:text-blue-400 transition-colors">Our Mission</a>
+                <a href="#donate" class="nav-link font-medium text-white hover:text-blue-400 transition-colors">Donate</a>
+                <a href="#contact" class="nav-link font-medium text-white hover:text-blue-400 transition-colors">Contact</a>
+                <a href="#donate" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-blue-200">
+                    Donate Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t p-6 shadow-xl">
+            <div class="flex flex-col gap-4">
+                <a href="#" class="text-lg font-medium text-slate-600">Home</a>
+                <a href="#mission" class="text-lg font-medium text-slate-600">Our Mission</a>
+                <a href="#donate" class="text-lg font-medium text-slate-600">Donate</a>
+                <a href="#contact" class="text-lg font-medium text-slate-600">Contact</a>
+                <a href="#donate" class="bg-blue-600 text-center text-white p-3 rounded-lg font-bold">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center hero-gradient text-white">
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8">
+                <i class="fas fa-award text-blue-400"></i>
+                <span class="text-sm font-semibold tracking-wide uppercase">Based in Eldoret, Kenya</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Empowering Mobility, <br />
+                <span class="text-blue-400">Restoring Hope.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-200 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+                Ndiema Fitness Foundation supports children and adults with physical challenges and families facing financial hardship.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#donate" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-transform hover:scale-105 shadow-xl">
+                    Support Our Mission
+                </a>
+                <a href="https://wa.me/254759500240" class="bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center p-1">
+                <div class="w-1 h-2 bg-white rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Row -->
+    <section class="bg-white py-12 border-b">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50">
+                <div class="flex items-center gap-2 font-bold"><i class="fas fa-shield-check"></i> Verified Organization</div>
+                <div class="flex items-center gap-2 font-bold"><i class="fas fa-users"></i> Community Focused</div>
+                <div class="flex items-center gap-2 font-bold"><i class="fas fa-hand-holding-heart"></i> Fully Transparent</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="donate" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">Support Us</h2>
+                    <h3 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">Financial Support & Payment</h3>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        Your direct financial support allows us to act quickly for medical emergencies and mobility equipment in Eldoret. We use M-Pesa for full transparency.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-[#00A34E] flex items-start gap-4 shadow-sm group">
+                            <div class="bg-[#00A34E] text-white p-4 rounded-xl">
+                                <i class="fas fa-qrcode text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-xl">Lipa Na M-Pesa</h4>
+                                <p class="text-slate-500 mb-3 text-sm italic">Buy Goods & Services</p>
+                                <div class="bg-white px-6 py-3 border rounded-xl inline-block border-slate-200">
+                                    <span class="text-[10px] text-slate-400 block uppercase font-bold tracking-widest mb-1">Till Number</span>
+                                    <span class="text-3xl font-black text-slate-800 tracking-wider">3045973</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-50 p-6 rounded-2xl border-l-4 border-blue-600 flex items-start gap-4 shadow-sm">
+                            <div class="bg-blue-600 text-white p-4 rounded-xl">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-xl">Email for Partnership</h4>
+                                <p class="text-slate-500 text-sm">coachndiemanimrod@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-[2rem] -rotate-2 z-0"></div>
+                    <div class="relative z-10 bg-[#00A34E] rounded-3xl p-10 text-white shadow-2xl">
+                        <div class="flex justify-between items-start mb-10">
+                            <h4 class="text-2xl font-bold">M-Pesa Steps</h4>
+                            <span class="bg-white text-[#00A34E] px-3 py-1 rounded-lg text-xs font-black uppercase tracking-tighter">Safaricom</span>
+                        </div>
+                        <ol class="space-y-5 text-lg font-medium">
+                            <li class="flex gap-4">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-sm">1</span>
+                                <span>Go to <strong>Lipa na M-PESA</strong></span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-sm">2</span>
+                                <span>Select <strong>Buy Goods and Services</strong></span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-sm">3</span>
+                                <span>Enter Till: <strong class="bg-white text-[#00A34E] px-2 rounded-md">3045973</strong></span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-sm">4</span>
+                                <span>Enter your donation amount</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-sm">5</span>
+                                <span>Confirm with your M-PESA PIN</span>
+                            </li>
+                        </ol>
+                        <p class="mt-8 text-white/70 text-xs text-center italic border-t border-white/10 pt-4">
+                            Your help transforms lives. Asante sana!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Grid -->
+    <section id="mission" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">Our Work</h2>
+                <h3 class="text-4xl font-bold text-slate-900">Making a Difference</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-walking text-blue-600 text-3xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Physical Rehab</h4>
+                    <p class="text-slate-600 leading-relaxed">Personalized fitness and mobility programs to help adults and children regain strength and independence.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="bg-green-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-green-600 text-3xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Financial Support</h4>
+                    <p class="text-slate-600 leading-relaxed">Direct assistance for families in Eldoret struggling with medical bills and essential living costs.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="bg-red-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-red-500 text-3xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Community Care</h4>
+                    <p class="text-slate-600 leading-relaxed">Building a supportive network where physically challenged individuals feel included and empowered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Inquiry Form -->
+    <section id="contact" class="py-24 bg-blue-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="text-4xl font-bold mb-8 italic">"No one has ever become poor by giving."</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span>+254 759 500 240</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span>coachndiemanimrod@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-map-marker-alt text-blue-400"></i>
+                            <span>Eldoret, Kenya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-2xl text-slate-900">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[#25D366]/10 p-3 rounded-xl">
+                            <i class="fab fa-whatsapp text-[#25D366] text-2xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold">Direct Inquiry</h4>
+                    </div>
+                    <p class="text-slate-500 mb-6 text-sm">Send your inquiry directly to Coach Ndiema's WhatsApp.</p>
+                    
+                    <form id="whatsappForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Full Name</label>
+                            <input type="text" id="form-name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Email</label>
+                            <input type="email" id="form-email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="email@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Your Message</label>
+                            <textarea id="form-message" required class="w-full bg-slate-50 border border-slate-200 rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none h-32 resize-none" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Send to WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <div class="bg-blue-600 p-2 rounded-lg text-white">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <span class="font-bold text-xl text-white tracking-tight">NDIEMA FITNESS</span>
+            </div>
+            <p class="mb-8">Dedicated to physical empowerment in Eldoret, Kenya.</p>
+            <div class="border-t border-slate-800 pt-8 text-sm">
+                <p>© <span id="year"></span> Ndiema Fitness Foundation. Coach Ndiema Nimrod.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            const logo = document.querySelector('.logo-text');
+            const links = document.querySelectorAll('.nav-link');
+            const menuBtn = document.getElementById('menu-btn');
+
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white', 'shadow-md', 'py-3');
+                nav.classList.remove('py-5');
+                logo.classList.replace('text-white', 'text-slate-900');
+                menuBtn.classList.replace('text-white', 'text-slate-900');
+                links.forEach(l => l.classList.replace('text-white', 'text-slate-600'));
+            } else {
+                nav.classList.remove('bg-white', 'shadow-md', 'py-3');
+                nav.classList.add('py-5');
+                logo.classList.replace('text-slate-900', 'text-white');
+                menuBtn.classList.replace('text-slate-900', 'text-white');
+                links.forEach(l => l.classList.replace('text-slate-600', 'text-white'));
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submission to WhatsApp
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const message = document.getElementById('form-message').value;
+            const phone = "254759500240";
+
+            const text = encodeURIComponent(
+                `*New Inquiry via Website*\n\n` +
+                `*Name:* ${name}\n` +
+                `*Email:* ${email}\n` +
+                `*Message:* ${message}`
+            );
+
+            window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        });
+
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
